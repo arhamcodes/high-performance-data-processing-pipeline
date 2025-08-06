@@ -1,9 +1,13 @@
 [project]
 name = "api-python"
 version = "0.1.0"
-description = "Add your description here"
+description = "high performance data processing pipeline"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "fastapi[standard]>=0.116.1",
 ]
+
+[build-system]
+requires = ["uv>=0.1.0"]
+build-backend = "uv.build"

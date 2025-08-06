@@ -1,4 +1,4 @@
-### Phase 0: The Setup (Day 1 - Morning)
+### Phase 0: The Setup
 
 This is a critical, one-time setup that will save you a lot of headaches later.
 
@@ -15,7 +15,7 @@ This is a critical, one-time setup that will save you a lot of headaches later.
 
 ---
 
-### Phase 1: The Core Services (Day 1 - Afternoon & Day 2)
+### Phase 1: The Core Services
 
 Focus on building the minimal viable product for the three core services. Don't worry about integration or fancy features yet.
 
@@ -36,7 +36,7 @@ Focus on building the minimal viable product for the three core services. Don't 
 
 ---
 
-### Phase 2: Asynchronous Communication and Persistence (Day 3 & Day 4 - Morning)
+### Phase 2: Asynchronous Communication and Persistence
 
 Now, we'll introduce the message queue and databases to make the system robust.
 
@@ -54,7 +54,7 @@ Now, we'll introduce the message queue and databases to make the system robust.
 
 ---
 
-### Phase 3: The Adapter Pattern and Professional Polish (Day 4 - Afternoon & Day 5)
+### Phase 3: The Adapter Pattern and Professional Polish
 
 This phase elevates the project from a good demo to an impressive portfolio piece.
 
@@ -71,7 +71,7 @@ This phase elevates the project from a good demo to an impressive portfolio piec
 
 ---
 
-### Phase 4: Observability and Automation (Day 6)
+### Phase 4: Observability and Automation
 
 This is the phase that screams "hire me." A working product is good; a working, monitored, and automated product is a goldmine.
 
@@ -91,7 +91,7 @@ This is the phase that screams "hire me." A working product is good; a working, 
 
 ---
 
-### Phase 5: The Final Showcase (Day 7)
+### Phase 5: The Final Showcase
 
 This is where you package everything to make it irresistible to an employer.
 
