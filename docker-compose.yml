@@ -1,0 +1,40 @@
+services:
+  api:
+    build: 
+      context: ./api-python
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    networks:
+      - pipeline-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  worker:
+    build:
+      context: ./worker-go
+      dockerfile: Dockerfile
+    networks:
+      - pipeline-network
+    depends_on:
+      api:
+        condition: service_healthy
+
+  legacy:
+    build:
+      context: ./legacy-java/demo
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - pipeline-network
+    depends_on:
+      api:
+        condition: service_healthy
+
+networks:
+  pipeline-network:
+    driver: bridge

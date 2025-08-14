@@ -50,3 +50,7 @@ class Order(BaseModel):
 async def ingest_order(order: Order):
     print("Received order data:", order)
     return {"status": "success", "order": order}
+
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}

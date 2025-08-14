@@ -6,8 +6,10 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "fastapi[standard]>=0.116.1",
+    "uvicorn>=0.24.0",
+    "pydantic>=2.5.2"
 ]
 
 [build-system]
-requires = ["uv>=0.1.0"]
-build-backend = "uv.build"
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
